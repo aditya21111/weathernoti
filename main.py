@@ -4,9 +4,11 @@ import json
 #C = K - 273.15.
 city=input('Enter your city name or pincode ')
 city.replace(' ',',')
-api_key='your api key '
+api_key='your api key'
 url=(f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}')
 title=f'{city} weather notifcation'
+
+# notify
 def notify(url,title):
     try:
         response=requests.get(url)
