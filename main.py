@@ -27,7 +27,7 @@ def notify(url,title):
     #concating all the values in single string
     weather_details=f'{weather_description} in {city_name} with a temperature of {actual_temp}° C and maximum temperature can be {max_temp}° C .' 
     print(weather_details)   
-    notification.notify(title=title,message=weather_details,app_icon=None,timeout=10,toast=False)
+    notification.notify(title=title,message=weather_details,app_icon="./logo.png",timeout=10,toast=False)
         
 
 #calling the function
